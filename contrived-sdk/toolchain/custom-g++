@@ -1,0 +1,7 @@
+#!/bin/sh
+
+BASEDIR=$(dirname "$0")
+SYSROOT=/
+CMD="g++ --sysroot=$SYSROOT -I$BASEDIR/../sysroot/include"
+[ "$#" -gt "0" ] && CMD="${CMD}"
+exec env ${CMD} "${@}"

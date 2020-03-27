@@ -1,0 +1,6 @@
+# Autodetect file type by default
+* text=auto
+
+# Ensure Linux EOLs are preserved for our shell scripts.
+custom-gcc eol=lf
+custom-g++ eol=lf
